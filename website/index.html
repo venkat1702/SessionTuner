@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SessionTuner</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="headerIcon">
+        <img src="images/icon.png" alt="" srcset="" />
+        <strong>SessionTuner</strong>
+      </div>
+      <button class="cta">Install Extension</button>
+    </header>
+
+    <main class="container">
+      <!-- Hero -->
+      <section class="hero">
+        <h1>Control, Inspect, and Reset Website Sessions.</h1>
+        <p class="text">
+          Clear site data instantly or automatically without switching to
+          Incognito or opening DevTools.
+        </p>
+        <div class="hero-actions">
+          <button class="cta">Install Extension</button>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section>
+        <h2 class="Heading">What does it do?</h2>
+        <div class="features">
+          <div class="feature">
+            <div class="topBar">
+              <div class="smallCircleContainer">
+                <div class="smallCircle"></div>
+                <div class="smallCircle"></div>
+                <div class="smallCircle"></div>
+              </div>
+              <h4>Reset Now</h4>
+            </div>
+            <p class="text">
+              Instantly remove all site-specific data with one click. This
+              includes cookies, Local Storage, Session Storage, Cache Storage,
+              and IndexedDB. Ensuring a completely fresh state for the current
+              website without affecting other tabs or domains.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="topBar">
+              <div class="smallCircleContainer">
+                <div class="smallCircle"></div>
+                <div class="smallCircle"></div>
+                <div class="smallCircle"></div>
+              </div>
+              <h4>Auto Clear</h4>
+            </div>
+            <p class="text">
+              Enable automatic cleanup so the moment you close a tab or browser
+              window, all related session data is wiped. This prevents session
+              leakage, stale logins, and tracking persistence. Perfect for
+              testing, shared machines, or privacy-first workflows.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="topBar">
+              <div class="smallCircleContainer">
+                <div class="smallCircle"></div>
+                <div class="smallCircle"></div>
+                <div class="smallCircle"></div>
+              </div>
+              <h4>Stats</h4>
+            </div>
+            <p class="text">
+              Quickly see how many keys are a site is using and whether a
+              Service Worker is active without opening DevTools every time.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="topBar">
+              <div class="smallCircleContainer">
+                <div class="smallCircle"></div>
+                <div class="smallCircle"></div>
+                <div class="smallCircle"></div>
+              </div>
+              <h4>Config</h4>
+            </div>
+            <p class="text">
+              Fine-tune what gets cleared by selectively excluding storage types
+              like Local Storage, cookies, or IndexedDB. This gives you full
+              control over session resets, allowing you to preserve critical
+              data while still eliminating unwanted state.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="Heading">Common doubts?</h2>
+
+        <div class="dropdownContainer">
+          <div class="dropdown" onclick="this.classList.toggle('open')">
+            <p>
+              <span>Why SessionTuner over Incognito?</span>
+              <span class="arrow"></span>
+            </p>
+            <ul onclick="event.stopPropagation()">
+              <li class="text">
+                Incognito mode starts a fresh session, but you can't inspect,
+                tweak, or partially reset anything. SessionTuner lets you stay
+                in your real browsing context and precisely clear only what
+                matters. without losing logins, extensions, or dev state you
+                want to keep.
+              </li>
+            </ul>
+          </div>
+
+          <div class="dropdown" onclick="this.classList.toggle('open')">
+            <p>Who is this for? <span class="arrow"></span></p>
+            <ul onclick="event.stopPropagation()">
+              <li class="text">
+                Debugging — Fix broken auth, stale cache, or corrupted storage
+                without switching to Incognito.
+              </li>
+
+              <li class="text">
+                Convenience — Auto-clean sessions on close while keeping
+                extensions and workflows.
+              </li>
+              <li class="text">
+                Control — For devs and testers who want precision, not full
+                resets.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>SessionTuner — Simple session control</footer>
+  </body>
+</html>
